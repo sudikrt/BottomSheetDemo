@@ -2,14 +2,12 @@ package com.geeksynergy.finalbottom;
 
 import android.support.annotation.NonNull;
 import android.support.design.widget.CoordinatorLayout;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.flaviofaria.kenburnsview.KenBurnsView;
-import com.flaviofaria.kenburnsview.Transition;
+import com.geeksynergy.finalbottom.behavior.BottomSheetBehaviorGoogleMapsLike;
 
 public class MainActivity extends AppCompatActivity {
 

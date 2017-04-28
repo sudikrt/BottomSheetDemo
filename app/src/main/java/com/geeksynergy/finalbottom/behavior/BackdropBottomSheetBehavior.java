@@ -1,4 +1,4 @@
-package com.geeksynergy.finalbottom;
+package com.geeksynergy.finalbottom.behavior;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

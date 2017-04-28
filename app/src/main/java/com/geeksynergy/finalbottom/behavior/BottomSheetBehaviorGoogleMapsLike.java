@@ -1,4 +1,4 @@
-package com.geeksynergy.finalbottom;
+package com.geeksynergy.finalbottom.behavior;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -16,6 +16,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
+
+import com.geeksynergy.finalbottom.R;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
