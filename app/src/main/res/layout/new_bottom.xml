@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:diagonal="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.florent37.diagonallayout.DiagonalLayout
+            android:id="@+id/diagonalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            diagonal:diagonal_angle="8"
+            diagonal:diagonal_direction="right"
+            diagonal:diagonal_position="top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EEEEEE"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:background="#EEEEEE" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bottom_sheet_peek_height"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:paddingTop="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/bottom_sheet_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Test Dummy"
+                            android:textColor="@android:color/black"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:id="@+id/text_dummy1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Text dummy 1234 1234"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Text dummy qwer asdf zxcv"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="APACHE LICENSE"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="18sp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+
+                    android:text="@string/dummy_text"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="620dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/colorAccent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Your remaining content here"
+                        android:textColor="@android:color/white" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+        </com.github.florent37.diagonallayout.DiagonalLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginStart="24dp"
+            android:elevation="15dp"
+            app:civ_border_color="#40FFFFFF"
+            app:civ_border_width="8dp"
+            app:srcCompat="@drawable/ic_person_black_24dp" />
+    </RelativeLayout>
+
+
+    <!--<com.github.florent37.diagonallayout.DiagonalLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:elevation="10dp"
+        app:diagonal_angle="10"
+        app:diagonal_direction="right"
+        app:diagonal_position="top">
+        <LinearLayout
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_sheet_peek_height"
+                android:paddingTop="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/bottom_sheet_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Test Dummy"
+                        android:textColor="@android:color/black"
+                        android:textSize="19sp"/>
+
+                    <TextView
+                        android:id="@+id/text_dummy1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Text dummy 1234 1234"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Text dummy qwer asdf zxcv"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="APACHE LICENSE"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/darker_gray"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+
+                android:text="@string/dummy_text"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="620dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Your remaining content here"
+                    android:textColor="@android:color/white" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </com.github.florent37.diagonallayout.DiagonalLayout>-->
+</RelativeLayout>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinate_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dashbrd_0"
+        app:layout_behavior="@string/BackDropBottomSheetBehavior" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:anchorPoint="250dp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="250dp"
+        app:layout_behavior="@string/BottomSheetBehaviorGoogleMapsLike">
+
+        <include
+            layout="@layout/new_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
