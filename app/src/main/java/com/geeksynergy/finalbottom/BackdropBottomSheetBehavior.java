@@ -56,7 +56,7 @@ public class BackdropBottomSheetBehavior <V extends View> extends CoordinatorLay
          * mCollapsedY: Y position in where backdrop get hidden behind dependency.
          * {@link BottomSheetBehaviorGoogleMapsLike#getPeekHeight()} and collapsedY are the same point on screen.
          */
-        int collapsedY = dependency.getHeight() - mBottomSheetBehaviorRef.get().getPeekHeight();
+        int collapsedY = dependency.getHeight() - mBottomSheetBehaviorRef.get().getPeekHeight() - 120;
         /**
          * achorPointY: with top being Y=0, achorPointY defines the point in Y where could
          * happen 2 things:
@@ -64,14 +64,14 @@ public class BackdropBottomSheetBehavior <V extends View> extends CoordinatorLay
          * positive values) or the dependency view overlaps the backdrop (when
          * {@link #mCurrentChildY} got negative values)
          */
-        int achorPointY = child.getHeight();
+        int achorPointY = child.getHeight() - 50;
         /**
          * lastCurrentChildY: Just to know if we need to return true or false at the end of this
          * method.
          */
         int lastCurrentChildY = mCurrentChildY;
 
-        if((mCurrentChildY = (int) ((dependency.getY()-achorPointY) * collapsedY / (collapsedY-achorPointY))) <= 0)
+        if((mCurrentChildY = (int) (((dependency.getY()-achorPointY) * collapsedY / (collapsedY-achorPointY))) + 120) <= 0)
             child.setY(mCurrentChildY = 0);
         else
             child.setY(mCurrentChildY);

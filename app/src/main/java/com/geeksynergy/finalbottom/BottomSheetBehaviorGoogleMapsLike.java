@@ -362,7 +362,7 @@ public class BottomSheetBehaviorGoogleMapsLike<V extends View> extends Coordinat
 
         if ( dy > 0 ) { // Upward
             if ( newTop < mMinOffset ) {
-                consumed[1] = currentTop - mMinOffset;
+                consumed[1] = currentTop - mMinOffset ;
                 ViewCompat.offsetTopAndBottom( child, -consumed[1] );
                 setStateInternal( STATE_EXPANDED );
             } else {

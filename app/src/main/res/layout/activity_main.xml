@@ -25,7 +25,7 @@
         android:orientation="vertical"
         app:anchorPoint="250dp"
         app:behavior_hideable="true"
-        app:behavior_peekHeight="250dp"
+        app:behavior_peekHeight="120dp"
         app:layout_behavior="@string/BottomSheetBehaviorGoogleMapsLike">
 
         <include
